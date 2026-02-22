@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Mapa de Monitoramento • Observatório Ambiental Escolar</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+
+<body>
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+        <div class="sidebar-header">
+            <h2>Observatório</h2>
+            <button class="sidebar-toggle">☰</button>
+        </div>
+
+        <nav class="sidebar-nav">
+            <ul>
+                <li><a href="dashboard.html">Visão Geral</a></li>
+                <li><a href="relatorios.html">Relatórios</a></li>
+                <li><a href="#" class="active-link">Mapa de Monitoramento</a></li>
+                <li><a href="index.html">Sair</a></li>
+            </ul>
+        </nav>
+    </aside>
+
+    <!-- MAIN -->
+    <main class="main-content">
+
+        <header class="topbar">
+            <button class="mobile-toggle">☰</button>
+            <h1>Monitoramento Epidemiológico Escolar</h1>
+        </header>
+
+        <section class="content">
+
+            <!-- INDICADORES -->
+            <div class="cards">
+
+                <div class="card">
+                    <h3>Total de Casos (2026)</h3>
+                    <p class="metric" id="totalCasos">--</p>
+                </div>
+
+                <div class="card">
+                    <h3>Bairro com Maior Incidência</h3>
+                    <p class="metric" id="bairroCritico">--</p>
+                </div>
+
+                <div class="card">
+                    <h3>Variação Anual</h3>
+                    <p class="metric" id="variacaoAnual">--</p>
+                </div>
+
+            </div>
+
+            <!-- GRÁFICO -->
+            <div class="report-card">
+                <h2>Evolução Mensal de Registros</h2>
+                <canvas id="graficoEvolucao"></canvas>
+            </div>
+
+            <!-- MAPA SIMPLIFICADO -->
+            <div class="report-card">
+                <h2>Incidência por Bairro</h2>
+
+                <div class="map-grid" id="mapGrid">
+                    <!-- preenchido via JS -->
+                </div>
+
+                <div class="legenda">
+                    <span class="baixo">Baixo</span>
+                    <span class="medio">Moderado</span>
+                    <span class="alto">Alto</span>
+                </div>
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="dashboard.js"></script>
+    <script src="mapa-dengue.js"></script>
+
+</body>
+
+</html>

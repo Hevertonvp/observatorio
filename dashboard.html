@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard • Observatório Ambiental Escolar</title>
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+        <div class="sidebar-header">
+            <h2>Observatório</h2>
+            <button class="sidebar-toggle">☰</button>
+        </div>
+
+        <nav class="sidebar-nav">
+            <ul>
+                <li><a href="#">Visão Geral</a></li>
+                <li><a href="#">Resíduos</a></li>
+                <li><a href="mapa-dengue.html">Mapa de Casos de Dengue</a></li>
+                <li><a href="#">Condições Ambientais</a></li>
+                <li><a href="relatorios.html">Relatórios</a></li>
+                <li><a href="#">Configurações</a></li>
+                <li><a href="index.html">Sair</a></li>
+            </ul>
+        </nav>
+    </aside>
+
+    <!-- MAIN CONTENT -->
+    <main class="main-content">
+
+        <!-- TOPBAR -->
+        <header class="topbar">
+            <button class="mobile-toggle">☰</button>
+            <h1>Dashboard Ambiental</h1>
+        </header>
+
+        <!-- CONTENT -->
+        <section class="content">
+
+            <div class="cards">
+
+                <div class="card">
+                    <h3>Total de Registros</h3>
+                    <p class="metric">1.284</p>
+                </div>
+
+                <div class="card">
+                    <h3>Áreas Monitoradas</h3>
+                    <p class="metric">37</p>
+                </div>
+
+                <div class="card">
+                    <h3>Resíduos Classificados</h3>
+                    <p class="metric">642</p>
+                </div>
+
+            </div>
+
+            <div class="table-section">
+                <h2>Últimos Registros</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Data</th>
+                            <th>Categoria</th>
+                            <th>Local</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>12/03/2026</td>
+                            <td>Resíduo Plástico</td>
+                            <td><b>Alto dos Pinheiros</b></td>
+                            <td>Analisado</td>
+                        </tr>
+                        <tr>
+                            <td>11/03/2026</td>
+                            <td>Água Parada</td>
+                            <td><b>Três Marias</b></td>
+                            <td>Pendente</td>
+                        </tr>
+                        <tr>
+                            <td>10/03/2026</td>
+                            <td>Resíduo Orgânico</td>
+                            <td><b>Carlos Alves</b></td>
+                            <td>Analisado</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+        </section>
+
+    </main>
+
+    <script src="dashboard.js"></script>
+</body>
+</html>
+
+
+<!-- Alto dos Pinheiros, São Sebastião, Caxangá, Santa Terezinha, Centro, Três Marias, Santo Antônio e São José, além de distritos como Roça Grande e Carlos Alves -->

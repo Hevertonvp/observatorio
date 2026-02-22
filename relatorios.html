@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Relatórios • Observatório Ambiental Escolar</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="dashboard.css">
+
+    <!-- Chart.js CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+        <div class="sidebar-header">
+            <h2>Observatório</h2>
+            <button class="sidebar-toggle">☰</button>
+        </div>
+
+        <nav class="sidebar-nav">
+            <ul>
+                <li><a href="dashboard.html">Visão Geral</a></li>
+                <li><a href="#">Resíduos</a></li>
+                <li><a href="#">Condições Ambientais</a></li>
+                <li><a href="#" class="active-link">Relatórios</a></li>
+                <li><a href="index.html">Sair</a></li>
+            </ul>
+        </nav>
+    </aside>
+
+    <!-- MAIN -->
+    <main class="main-content">
+
+        <header class="topbar">
+            <button class="mobile-toggle">☰</button>
+            <h1>Relatórios Analíticos</h1>
+        </header>
+
+        <section class="content">
+
+            <div class="report-card">
+                <h2>Registros de Resíduos por Bairro</h2>
+                <canvas id="graficoResiduos"></canvas>
+            </div>
+
+            <div class="report-card">
+                <h2>Focos de Água Parada por Bairro</h2>
+                <canvas id="graficoDengue"></canvas>
+            </div>
+
+            <div class="report-card">
+                <h2>Evolução Mensal de Registros</h2>
+                <canvas id="graficoAr"></canvas>
+            </div>
+
+        </section>
+
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="relatorios.js"></script>
+    <script src="dashboard.js"></script>
+    <script src="relatorios.js"></script>
+
+
+</body>
+
+</html>
